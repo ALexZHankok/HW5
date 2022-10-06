@@ -18,7 +18,7 @@ public class SQRServiceTest {
     public void UnderRange() {
         SQRService service = new SQRService();
         int expected = 0;
-        int actual = service.countSquares(98, 99);
+        int actual = service.countSquares(10, 99);
         Assertions.assertEquals(expected, actual);
 
     }
@@ -27,7 +27,7 @@ public class SQRServiceTest {
     public void OverRange() {
         SQRService service = new SQRService();
         int expected = 0;
-        int actual = service.countSquares(1001, 1002);
+        int actual = service.countSquares(1001, 1010);
         Assertions.assertEquals(expected, actual);
     }
 
